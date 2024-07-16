@@ -12,6 +12,8 @@ imgCanny = cv2.Canny(img,150,200)
 imgDialation = cv2.dilate(imgCanny,kernel,iterations=1)
 imgEroded = cv2.erode(imgDialation,kernel,iterations=1)
  
+#  img = cv2.resize(img, (frameWidth, frameHeight))   ######## RESIZE IMAGE #########
+
 cv2.imshow("Gray Image",imgGray)
 cv2.imshow("Blur Image",imgBlur)
 cv2.imshow("Canny Image",imgCanny)
